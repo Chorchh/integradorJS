@@ -35,22 +35,27 @@ const renderProduct = (product) => {
   } = product;
   return `
   <div class="boardgame-card">
-  <div class="title-bg">
-  <div class="img-container"><img src="${imgSrc}" class="boardgame-img"/></div>
-  <h3 class="title">${nombre}</h3></div>
-  <div class="info-bg">
-    <p><i class="fa-solid fa-user"></i> ${minJugadores}-${maxJugadores} jugadores</p>
-    <p><i class="fa-solid fa-clock"></i> ${tiempo} min</p>
-    <p><i class="fa-solid fa-children"></i> ${edad}+ años</p>
+    <div class="title-bg">
+      <img src=${imgSrc} class="boardgame-img"/>
+      <h3 class="title">${nombre}</h3>
+    </div>
+    <div class="info-bg">
+      <div class="info-l">
+        <p><i class="fa-solid fa-user"></i> ${minJugadores}-${maxJugadores} jugadores</p>
+        <p><i class="fa-solid fa-clock"></i> ${tiempo} min</p>
+        <p><i class="fa-solid fa-children"></i> ${edad}+ años</p>
+      </div>
+      <div class="info-r">
+        <span class="precio">$${precio}</span>
+        <button class="btn-add"
+        data-id="${id}"
+        data-nombre="${nombre}"
+        data-precio="${precio}"
+        data-img="${imgSrc}">Comprar
+        </button>
+      </div>
+    </div>
   </div>
-  <span class="precio">$${precio}</span>
-  <button class="btn-add"
-  data-id="${id}"
-  data-nombre="${nombre}"
-  data-precio="${precio}"
-  data-img="${imgSrc}">Comprar
-  </button>
-</div>
   `;
 };
 
@@ -145,7 +150,7 @@ const renderCartProduct = (cartProduct) => {
   const { id, nombre, precio, imgSrc, quantity } = cartProduct;
   return `
   <div class="item-carrito">
-    <img src=${imgSrc} alt="item de compra" />
+    <img src=${imgSrc} alt="producto" class="img-carro"/>
     <div class="item-info">
       <h3 class="item-title">${nombre}</h3>
       <p>Precio:</p>
