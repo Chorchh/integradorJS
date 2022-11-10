@@ -266,7 +266,6 @@ let boardgamesData = [
   },
 ];
 
-// pag de ver mas
 const splitProducts = (size) => {
   let dividedBoardgames = [];
   for (let i = 0; i < boardgamesData.length; i += size) {
@@ -275,7 +274,6 @@ const splitProducts = (size) => {
   return dividedBoardgames;
 };
 
-// diviir los prod en arrays de 6
 const boardgamesController = {
   dividedBoardgames: splitProducts(6),
   nextBoardgames: 1,
