@@ -32,6 +32,7 @@ const renderProduct = (product) => {
     imgSrc,
     tiempo,
     edad,
+    imgCart,
   } = product;
   return `
   <div class="boardgame-card">
@@ -51,7 +52,7 @@ const renderProduct = (product) => {
         data-id="${id}"
         data-nombre="${nombre}"
         data-precio="${precio}"
-        data-img="${imgSrc}">Comprar
+        data-img="${imgCart}">Comprar
         </button>
       </div>
     </div>
@@ -147,10 +148,10 @@ const closeOnClick = (e) => {
 
 // *carrito
 const renderCartProduct = (cartProduct) => {
-  const { id, nombre, precio, imgSrc, quantity } = cartProduct;
+  const { id, nombre, precio, imgCart, quantity } = cartProduct;
   return `
   <div class="item-carrito">
-    <img src=${imgSrc} alt="producto" class="img-carro"/>
+    <img src=${imgCart} alt="producto" class="img-carro"/>
     <div class="item-info">
       <h3 class="item-title">${nombre}</h3>
       <p>Precio:</p>

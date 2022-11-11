@@ -46,12 +46,7 @@ html {
 
 .section-title {
   font-weight: var(--bold);
-  font-size: 32px;
-}
-
-.section-p {
-  font-weight: var(--thin);
-  font-size: 18px;
+  font-size: 38px;
 }
 
 /* *HEADER */
@@ -348,24 +343,47 @@ html {
 
 /* *ABOUT US */
 #aboutus {
-  justify-content: space-around;
-  gap: 100px;
-  padding: 70px 50px;
-}
-
-.aboutus-img {
-  background-image: url(./img/pexels-cottonbro-4691557.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 300px;
-  width: 400px;
+  display: flex;
 }
 
 .aboutus-text {
   display: flex;
   flex-direction: column;
+  align-content: center;
+  text-align: center;
   gap: 20px;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 5px solid var(--fondo);
+  background-color: var(--primario);
+  border-radius: 30px;
+  margin: 20px;
+  width: 250px;
+  height: 300px;
+}
+
+.h3-card {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.span-card {
+  font-size: 70px;
+}
+
+.p-card {
+  font-size: 16px;
+  font-weight: var(--medium);
 }
 
 @media (max-width: 768px) {
@@ -377,6 +395,7 @@ html {
     text-align: center;
     gap: 30px;
     flex-wrap: wrap;
+    border: 1px solid red;
   }
 
   .aboutus-text {
@@ -384,8 +403,11 @@ html {
     align-items: center;
   }
 
-  .section-p {
-    max-width: 350px;
+  .info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
   }
 }
 
