@@ -358,6 +358,8 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  gap: 90px;
+  padding-top: 30px;
 }
 
 .info-card {
@@ -395,7 +397,6 @@ html {
     text-align: center;
     gap: 30px;
     flex-wrap: wrap;
-    border: 1px solid red;
   }
 
   .aboutus-text {
@@ -404,10 +405,12 @@ html {
   }
 
   .info-container {
+    padding-top: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    gap: 20px;
   }
 }
 
