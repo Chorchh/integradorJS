@@ -10,7 +10,6 @@ let boardgamesData = [
     tiempo: 120,
     edad: 10,
     imgSrc: "./assets/img/manhattan-project.png",
-    imgCart: "./img/cartImg/arkham-horror.png",
   },
   {
     id: 2,
