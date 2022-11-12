@@ -383,6 +383,22 @@ html {
   font-weight: var(--medium);
 }
 
+@media (max-width: 992px) {
+  .aboutus-text {
+    display: flex;
+    align-items: center;
+  }
+
+  .info-container {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+  }
+}
+
 @media (max-width: 768px) {
   #aboutus {
     display: flex;
