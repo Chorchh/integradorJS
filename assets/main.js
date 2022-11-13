@@ -229,8 +229,8 @@ const estadoCarro = () => {
 
 const addProduct = (e) => {
   if (!e.target.classList.contains("btn-add")) return;
-  const { id, nombre, precio, imgSrc } = e.target.dataset;
-  const product = createProductData(id, nombre, precio, imgSrc);
+  const { id, nombre, precio, img } = e.target.dataset;
+  const product = createProductData(id, nombre, precio, img);
 
   if (existeElProducto(product)) {
     addUnitToProduct(product);

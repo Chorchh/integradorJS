@@ -4,7 +4,50 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Logueate</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+    <script
+      src="https://kit.fontawesome.com/e81d14ea7c.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Login</title>
   </head>
-  <body></body>
+  <body>
+    <div class="login">
+      <div class="login-container">
+        <div class="login-msj">
+          <h1 class="section-title">Meeple Naraja</h1>
+          <span class="login-span"
+            >Inicia sesión con Google <i class="fa-brands fa-google"></i
+          ></span>
+          <hr />
+          ó
+        </div>
+        <div class="cont-form">
+          <p class="section-p">Ingresa tus credeciales para ingresar</p>
+          <form class="form-login">
+            <label for="usuario">Usuario</label>
+            <input
+              class="login-input"
+              type="text"
+              id="usuario"
+              placeholder="ingresa tu usuario"
+            />
+            <label for="contraseña">Contraseña</label>
+            <input
+              class="login-input"
+              type="text"
+              id="contraseña"
+              placeholder="ingresa tu contraseña"
+            />
+          </form>
+          <button class="main-btn">Ingresar</button>
+        </div>
+        <hr />
+        <p>No tenes cuenta, crea una <a href="./register.html">aquí</a></p>
+      </div>
+      <div class="login-img">
+        <div class="img-log"></div>
+      </div>
+    </div>
+  </body>
 </html>

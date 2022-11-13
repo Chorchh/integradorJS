@@ -4,7 +4,50 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Registro</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+    <script
+      src="https://kit.fontawesome.com/e81d14ea7c.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Register</title>
   </head>
-  <body></body>
+  <body>
+    <div class="register">
+      <div class="register-container">
+        <div class="register-msj">
+          <h1 class="section-title">Bienvenido</h1>
+          <p class="section-p">
+            Crea tu cuenta para comprar tus productos favoritos
+          </p>
+        </div>
+        <div class="container-form">
+          <form class="form-register">
+            <label for="nombre">Nombre completo</label>
+            <input
+              class="login-input"
+              type="text"
+              id="nombre"
+              placeholder="ingresa tu nombre"
+            />
+            <label for="mail">Correo electónico</label>
+            <input
+              class="login-input"
+              type="email"
+              id="mail"
+              placeholder="ingresa tu correo electónico"
+            />
+            <label for="password">Contraseña</label>
+            <input class="login-input" type="password" id="password"
+            placeholder="Crea tu contraseña />
+            <label for="date">Fecha de nacimiento</label>
+            <input type="date" name="date" id="date" />
+          </form>
+          <button>Ingresar</button>
+        </div>
+      </div>
+      <div class="register-img">
+        <div class="img-register"></div>
+      </div>
+    </div>
+  </body>
 </html>

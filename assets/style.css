@@ -693,3 +693,164 @@ footer {
   cursor: not-allowed;
   border: none;
 }
+
+/* LOG-IN */
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 200px 0;
+  gap: 40px;
+}
+
+.login-msj {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 30px;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.login-input {
+  border-radius: 5px;
+  border: 2px solid var(--fondo);
+}
+
+.login-span {
+  border: 1px solid var(--fondo);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+hr {
+  border: 1px solid var(--primario);
+}
+
+.img-log {
+  background-image: url(./img/pexels-cottonbro-4691557.jpg);
+  height: 500px;
+  width: 600px;
+  border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 992px) {
+  .login-img {
+    display: none;
+  }
+
+  .login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .login-img {
+    display: none;
+  }
+
+  .login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* REGISTER */
+.register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 200px 0;
+  gap: 40px;
+}
+
+.register-msj {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 30px;
+}
+
+.register-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.register-input {
+  border-radius: 5px;
+  border: 2px solid var(--fondo);
+}
+
+hr {
+  border: 1px solid var(--primario);
+}
+
+.img-register {
+  background-image: url(./img/pexels-cottonbro-4691557.jpg);
+  height: 500px;
+  width: 600px;
+  border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 992px) {
+  .register-img {
+    display: none;
+  }
+
+  .register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .register-img {
+    display: none;
+  }
+
+  .register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
